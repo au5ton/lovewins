@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Love Wins</title>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800|Roboto:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <style>
+
+    @keyframes lovewins {
+        from {
+            opacity: 0;
+            transform: scale(0);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .valign-wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+    .valign {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .shade {
+        width: 100%;
+        height: 16.6667vh;
+        z-index: -10;
+    }
+
+    .love {
+        position: fixed;
+        z-index: 10;
+    }
+
+    .red {
+        background: red;
+        position: fixed;
+        top: 0vh;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+    }
+
+    .orange {
+        background: orange;
+        position: fixed;
+        top: 16.6667vh;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+
+    .yellow {
+        background: yellow;
+        position: fixed;
+        top: 33.3334vh;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+    }
+
+    .green {
+        background: green;
+        position: fixed;
+        top: 50vh;
+        animation-name: fadeIn;
+        animation-duration: 4s;
+    }
+
+    .blue {
+        background: blue;
+        position: fixed;
+        top: 66.6668vh;
+        animation-name: fadeIn;
+        animation-duration: 5s;
+    }
+
+    .indigo {
+        background: indigo;
+        position: fixed;
+        top: 83.3335vh;
+        animation-name: fadeIn;
+        animation-duration: 6s;
+    }
+
+    h1 {
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-weight: 800;
+        text-shadow: 2px 5px 0px black;
+        animation-name: lovewins;
+        animation-duration: 3s;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="valign-wrapper">
+        <h1 class="valign">Love Wins</h1>
+    </div>
+    <div class="shade red">
+    </div>
+    <div class="shade orange">
+    </div>
+    <div class="shade yellow">
+    </div>
+    <div class="shade green">
+    </div>
+    <div class="shade blue">
+    </div>
+    <div class="shade indigo">
+    </div>
+</body>
+</html>
